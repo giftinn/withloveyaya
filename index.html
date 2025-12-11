@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <div class="hearts-bg" id="heartsBackground"></div>
+
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>A Special Message Awaits!!</h1>
+            <p>Enter the secret password to unlock your Mensive's surprise...</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" />
+            <br>
+            <button class="enter-btn" onclick="checkPassword()">Enter</button>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #888;">Hint: The password is "tanggal jadian kita" ❤️</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Happy 1st Mensive</h1>
+                <p>A special collection of our memories and love</p>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn active" onclick="showPage('album')">📸 Photo Album</button>
+                <button class="nav-btn" onclick="showPage('letter')">💌 Love Letter</button>
+            </div>
+
+            <div class="page active" id="album">
+                <h2 style="color: #c44569; margin-bottom: 20px; text-align: center;">Our Beautiful Memories 💕</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="asset/1st-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/2nd-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/3rd-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/4th-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/5th-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/6th-pict.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="letter">
+                <h2 style="color: #c44569; margin-bottom: 30px; text-align: center;">A Letter From My Heart 💌</h2>
+                <div class="love-letter">
+                    <p>Selamat ulang tahun yang ke-18, Ka Tama 💗</p>
+                    <br>
+                    <p>Happy birthday, Ka Tama!
+                      Hari ini kamu resmi 18 tahun, dan aku bener-bener bersyukur bisa ada di samping kamu di hari spesial ini. Rasanya senang banget bisa lihat kamu tumbuh, belajar, dan jadi cowok yang makin dewasa dari waktu ke waktu.</p>
+                    <br>
+                    <p>Aku mau bilang makasih, Ka Tama.
+                      Makasih sudah jadi seseorang yang selalu bikin aku nyaman tanpa aku harus pura-pura kuat. Makasih karena kamu selalu punya cara buat bikin aku tenang, bahkan cuma lewat chat singkat atau suara kamu yang selalu bikin aku ngerasa aman. Kamu itu bukan cuma pacar buat aku—kamu itu rumah, tempat pulang yang selalu bikin hati aku adem.</p>
+                    <br>
+                    <p>Ka Tamaa, aku sayang banget sama kamu. Sayang yang sederhana, tapi tulus. Yang nggak pakai drama, nggak pakai alasan. Aku sayang cara kamu ngomong, cara kamu bercanda, cara kamu perhatian kecil yang kadang kamu sendiri nggak sadar. Kamu bikin aku merasa dihargai, dan itu nggak bisa aku temuin di sembarang orang. </p>
+                    <br>
+                    <p>Di usia kamu yang ke-18 ini, aku punya banyak banget harapan buat kamu. Aku harap kamu selalu sehat, selalu dilindungi, dan selalu dikelilingi orang-orang baik. Aku harap kamu makin deket sama impian yang kamu kejar—apa pun itu. Dan aku juga berharap, semoga aku bisa tetap jadi bagian dari perjalanan kamu… nemenin kamu pas kamu senang, dukung kamu pas kamu capek, dan banggain kamu setiap kali kamu berhasil.</p>
+                    <br>
+                    <p>Di usia kamu yang ke-18 ini, aku punya banyak banget harapan buat kamu.
+                      Aku harap kamu selalu sehat, selalu dilindungi, dan selalu dikelilingi orang-orang baik. Aku harap kamu makin deket sama impian yang kamu kejar—apa pun itu. Dan aku juga berharap, semoga aku bisa tetap jadi bagian dari perjalanan kamu… nemenin kamu pas kamu senang, dukung kamu pas kamu capek, dan banggain kamu setiap kali kamu berhasil.</p>
+                    <br>
+                    <p>Selamat ulang tahun yang ke-18, Ka Tama.
+                      Semoga tahun ini jadi bab yang lebih baik, lebih seru, dan lebih penuh kebahagiaan buat kamu. Aku sayang banget sama kamu. Hari ini tentang kamu… dan aku bangga banget punya kamu di hidup aku. </p>
+                  <br>
+                  <p style="text-align: right;">With all my love,<br> Yaya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" class="hidden-file-input" id="photoUpload" accept="image/*" onchange="handlePhotoUpload(event)">
+    <input type="file" class="hidden-file-input" id="puzzleImageUpload" accept="image/*" onchange="handlePuzzleImageUpload(event)">
+    <script src="asset/script.js" defer></script>
+</body>
+
+</html>
+
+
+
